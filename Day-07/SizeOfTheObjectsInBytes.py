@@ -1,4 +1,4 @@
-import struct
+import sys
 
 # SIzE OF THE DATA OBJECT IN BYTES
 class Solution:
@@ -7,16 +7,15 @@ class Solution:
         # if str == 'Integer':
         #     return sys.getsizeof(int)
         dictionary = {
-            'Integer' : 'i' ,
-            'Character' : 'c' ,
-            'Float' : 'f',
-            'Double' : 'd',
-            'Long' : 'l'
+            'Integer' : int ,
+            'Character' : str ,
+            'Long' : int,
+            'Float' : float
 
         }
 
         if string in dictionary:
-            return struct.calcsize(dictionary[string])
+            return sys.getsizeof(dictionary[string])
         else:
             return -1
 
