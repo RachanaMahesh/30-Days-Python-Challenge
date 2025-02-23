@@ -27,16 +27,17 @@ def people_generator(num_people):
         }
         yield people
     
-# t1 = time.perf_counter()
-# people = people_list(1000000)
-# t2 = time.perf_counter()
-
 t1 = time.perf_counter()
 people = people_list(1000000)
 t2 = time.perf_counter()
 
+t3 = time.perf_counter()
+people = people_generator(1000000)
+t4 = time.perf_counter()
+
 print('Memory (After) {}Mb'.format(mem_profile.memory_usage_psutil()))
 print("took {} seconds".format(t2-t1))
+print("took {} seconds".format(t4-t3))
 
 # Eg:1
 # def fib(limit):
