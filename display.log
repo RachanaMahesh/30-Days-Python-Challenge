@@ -1,0 +1,5 @@
+INFO:root:Run with args: ('Abhi', 25) and kwargs :{}
+INFO:root:Run fun - display with args: ('Abhi', 25) and kwargs :{}
+INFO:root:Run fun - 'display' with args: ('Abhi', 25) and kwargs :{}
+INFO:root:Run fun - 'display' with args: ('Abhi', 25) and kwargs :{}
+INFO:root:Run fun - 'display' with args: ('Hank', 39) and kwargs :{}
