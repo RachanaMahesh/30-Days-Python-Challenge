@@ -80,5 +80,15 @@ print(dt_mtn)
 
 print("----------------------------------- iso format -----------------------------------------")
 # ISO format :  best way to save dates or pass them around for internal use
-print(dt_mtn.iso)
+print(dt_mtn.strftime('%B %d, %Y')) # March 21, 2025 strftime: to convert from 
 # refer python docuentation & look at the format code
+
+#strftime (String Format Time) → Converts a datetime object to a formatted string.
+#strptime (String Parse Time) → Converts a string into a datetime object.
+
+dt_str = 'March 21, 2025' #it's a string
+dt = datetime.datetime.strptime(dt_str,'%B %d, %Y')
+print(dt)
+# NOTE:Even though strptime correctly parses the date string, the datetime object by default prints in the standard ISO format:
+# 2025-03-21 00:00:00 → This is the default output of a datetime object.
+# It stores the correct date, but when printed, it uses its default format.
