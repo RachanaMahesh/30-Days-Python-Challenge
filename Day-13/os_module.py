@@ -8,7 +8,7 @@ print(os.getcwd())
 print(os.listdir()) # to list all files & folders. u can pass the path as a string 
 
 #to create a new folder there are 2 ways
-# os.mkdire("OS-Demo-2")
+# os.mkdir("OS-Demo-2")
 os.makedirs("OS-Demo-2/Sub-Dir-1") # if u want to create a all of the intermediate directories that u need to make
 print(os.listdir()) 
 
@@ -17,7 +17,7 @@ print(os.listdir())
 os.removedirs("OS-Demo-2/Sub-Dir-1")
 
 # os.rename('test.txt','demo.txt')
-# print(os.listdir()) 
+# print(os.listdir())
 
 # to print all the info of demo.txt file
 print(os.stat('demo.txt'))
